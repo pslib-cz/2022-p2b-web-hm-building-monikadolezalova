@@ -1,0 +1,178 @@
+:root{
+    --secondary-color:rgba(235, 108, 39, 1); 
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+p{
+    font-family: 'Inter', sans-serif;
+}
+h2{
+    letter-spacing: -0.05em;
+}
+nav{
+    background: url(../media/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    margin: 24px 20px 24px 20px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li a {
+    padding-left: 1em;
+    display: block;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+.home-title{
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%),url(../media/pageheader-1920w.jpg);
+    background-blend-mode: normal, normal, hue, normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:270px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.home-title >h1{
+    font-weight: 800;
+    margin:0px;
+}
+.home-title >p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin:0px;
+}
+.content-wrapper{
+    margin:0 21px 0 21px;
+}
+.introduction{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:55px;
+    padding-bottom:80px;
+}
+.introduction > h2{
+    margin-bottom: 20px;
+}
+.services > div > img{
+    width: 320px;
+    height: 134px;
+}
+.services__novostavby > img{
+    border-radius: 0px 0px 40px 0px;
+}
+.services__prumyslove > img{
+    border-radius: 0px 0px 0px 20px;
+}
+.services__rekonstrukce > img{
+    border-radius: 0px 0px 40px 0px;
+}
+.services__komunikace > img{
+    border-radius: 0px 0px 0px 40px;
+}
+.cta__button--dashed{
+    border: 2px dashed var(--secondary-color);
+    color: var(--secondary-color);
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 40px;
+    margin-bottom: 40px;
+}
+.duvera{
+    background:linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%),url(../media/background-CTAblock-4460w.jpg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    font-weight: 700;
+    padding: 23px 20px 20px 20px;
+    font-size: 17px;
+}
+.reference > div >img{
+    width: 320px;
+}
+.cta__button--orange{
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 40px;
+    margin-bottom: 21px;
+    margin-top: 20px;
+    font-size:14px;
+}
+.reference{
+    margin:0 21px 0 21px;
+    text-align: center;
+}
+.reference__text{
+    margin-bottom: 62px;
+}
+.reference__item{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.reference__item >h2{
+    margin-bottom: 0px;
+}
+.reference__item >p{
+    margin-top: 0px;
+}
+#btn-reference{
+/*vycentrovat*/
+    margin-bottom: 100px;
+}
+footer{
+    background-color: var(--secondary-color);
+    color:white;
+    height: 285px;
+    text-align: center;
+}
+.footer__text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.cta__button--white{
+    border: 2px solid white;
+    background-color: white;
+    color: var(--secondary-color);
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 49px;
+    margin-bottom: 21px;
+    margin-top: 20px;
+    font-size:15px;
+}
