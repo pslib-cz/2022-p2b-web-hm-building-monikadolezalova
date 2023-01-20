@@ -65,7 +65,6 @@ nav{
 }
 .introduction{
     display: flex;
-    align-items: center;
     flex-direction: column;
     padding-top:55px;
     padding-bottom:80px;
@@ -148,7 +147,6 @@ nav{
     margin-top: 0px;
 }
 #btn-reference{
-/*vycentrovat*/
     margin-bottom: 100px;
 }
 footer{
@@ -156,6 +154,10 @@ footer{
     color:white;
     height: 285px;
     text-align: center;
+    padding-top: 65px;
+}
+footer > h2{
+    font-size: 22px;
 }
 .footer__text{
     display: flex;
@@ -175,4 +177,23 @@ footer{
     margin-bottom: 21px;
     margin-top: 20px;
     font-size:15px;
+}
+.list{
+    padding-left: 0px;
+    margin: 21px;
+    list-style: none;
+}
+.list > li::before{
+    content: "\2022";  
+    color: var(--secondary-color);  
+    display: inline-block;
+    align-items: center; 
+    width: 1em; 
+    margin-left: -1em;
+    font-size: 20px;
+}
+@media screen and (min-width:1920px) {
+    .navbar ul li a{
+        visibility: visible;
+    } 
 }
