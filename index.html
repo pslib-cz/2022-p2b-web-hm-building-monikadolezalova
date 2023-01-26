@@ -10,17 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
 </head>
+<script>
+    const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+    for (const btn of hamburgerButtons) {
+        btn.onclick = (event) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+                menu.classList.toggle("navbar__menu--hidden");
+            }
+        }
+    }
+</script>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">DOMŮ</a></li>
-            <li><a href="novostavby.html">SLUŽBY</a></li>
-            <li><a href="#">REFERENCE</a></li>
-            <li><a href="aboutus.html">O NÁS</a></li>
-            <li><a href="#">KONTAKT</a></li>
-        </ul>
-    </nav>
     <header class="home-title">
+        <nav class="navbar">
+            <ul>
+                <a href="./index.html" class="navbar__logo"><img src="./media/logo.png" alt="logo" width="130px"></a>
+                <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden"></menu>
+                <li><a href="index.html">DOMŮ</a></li>
+                <li><a href="novostavby.html">SLUŽBY</a></li>
+                <li><a href="#">REFERENCE</a></li>
+                <li><a href="aboutus.html">O NÁS</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
         <h1>HM Building.cz s.r.o.</h1>
         <p>liberecká stavební společnost</p>
     </header>

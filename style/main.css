@@ -7,20 +7,41 @@ body{
 }
 p{
     font-family: 'Inter', sans-serif;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color:inherit;
 }
 h2{
     letter-spacing: -0.05em;
 }
 nav{
-    background: url(../media/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
+   position: relative;
     top: 0;
     left: 0;
     right: 0;
     background-color: white;
-    margin: 24px 20px 24px 20px;
+    margin: 0px 20px 24px 20px;
+}
+@media (max-width: 768px) {
+    .navbar__menu--hidden {
+       display: none;
+    }
+}
+/* hamburger menu */
+.hamburger-menu {
+color: inherit;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-transform: uppercase;
+text-decoration: none;
+font-size: 0.75em;
+}
+.hamburger-menu::after {
+content: url(../media/hamburger.svg);
 }
 
 .navbar ul{
@@ -45,7 +66,7 @@ nav{
     background-position: center;
     height:270px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     color: white;
     flex-direction: column;
@@ -67,7 +88,6 @@ nav{
     display: flex;
     flex-direction: column;
     padding-top:55px;
-    padding-bottom:80px;
 }
 .introduction > h2{
     margin-bottom: 20px;
@@ -156,6 +176,9 @@ footer{
     text-align: center;
     padding-top: 65px;
 }
+.article{
+    padding-bottom: 50px;
+}
 footer > h2{
     font-size: 22px;
 }
@@ -164,6 +187,9 @@ footer > h2{
     justify-content: center;
     align-content: center;
     flex-direction: column;
+}
+.footer__text > p{
+    font-size: 15px;
 }
 .cta__button--white{
     border: 2px solid white;
@@ -181,6 +207,7 @@ footer > h2{
 .list{
     padding-left: 0px;
     margin: 21px;
+    margin-top: 11px;
     list-style: none;
 }
 .list > li::before{
@@ -191,6 +218,65 @@ footer > h2{
     width: 1em; 
     margin-left: -1em;
     font-size: 20px;
+}
+.list--end{
+    padding-bottom: 90px;
+}
+.map > img{
+    max-width: 360px;
+}
+.form{
+    margin:0 21px 0 21px;
+}
+.form > p{
+    font-size:14px;
+}
+.contacts{
+    color:var(--secondary-color);
+    margin-bottom: 50px;
+}
+.contacts > p{
+    display: flex;
+    align-items: center;
+}
+.contacts--number::before{
+    display:inline-block;
+    height:30px;
+    width:30px;
+    content: " ";
+    background: url(../media/icons/call_24px_outlined.svg) no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    margin-right:16px;
+}
+.contacts--email::before{
+    display:inline-block;
+    height:30px;
+    width:30px;
+    content: " ";
+    background: url(../media/icons/email_24px_outlined.svg) no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    margin-right:16px;
+}
+.contacts--location::before{
+    display:inline-block;
+    height:30px;
+    width:30px;
+    content: " ";
+    background: url(../media/icons/location_on_24px_outlined.svg) no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border: var(--secondary-color) solid 2px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    margin-right:16px;
 }
 @media screen and (min-width:1920px) {
     .navbar ul li a{
