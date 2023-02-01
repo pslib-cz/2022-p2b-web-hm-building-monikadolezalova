@@ -24,16 +24,17 @@
 <body>
     <header class="home-title">
         <nav class="navbar">
-            <ul>
-                <a href="./index.html" class="navbar__logo"><img src="./media/logo.png" alt="logo" width="130px"></a>
-                <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
-                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden"></menu>
-                <li><a href="index.html">DOMŮ</a></li>
-                <li><a href="novostavby.html">SLUŽBY</a></li>
-                <li><a href="#">REFERENCE</a></li>
-                <li><a href="aboutus.html">O NÁS</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
-            </ul>
+            <a href="./index.html" class="navbar__logo"><img src="./media/logo.png" alt="domů" width="130px"></a>
+            <menu class="navbar__menu hamburger-menu-hidden navbar__menu--hidden">
+                <ul>
+                    <li><a href="index.html">DOMŮ</a></li>
+                    <li><a href="novostavby.html">SLUŽBY</a></li>
+                    <li><a href="reference.html">REFERENCE</a></li>
+                    <li><a href="aboutus.html">O NÁS</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </menu>
+            <a class="hamburger" href="javascript:void(0)">menu</a>
         </nav>
         <h1>HM Building.cz s.r.o.</h1>
         <p>liberecká stavební společnost</p>
@@ -51,7 +52,7 @@
                     <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč</strong>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
                     <p>Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
                 </div>
-                <a href="#" class="cta__button--dashed">Zobrazit více</a>
+                <a href="novostavby.html" class="cta__button--dashed">Zobrazit více</a>
             </div>
             <div class="services__prumyslove">
                 <img src="./media/sluzba-prumyslove-stavby-1920w.jpg" alt="Průmyslové stavby">
@@ -92,21 +93,21 @@
             <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
         </div>
         <div class="reference__item">
-            <img src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="">
+            <a href="./reference/hasic.html"><img src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasičská zbrojnice"></a>
             <h2>Hasičská zbrojnice</h2>
             <p>celková rekostrukce</p>
         </div>
         <div class="reference__item">
-            <img src="./media/reference/reference-pradelna-600w.jpg" alt="Samoobslužná prádelna">
+            <a href="./reference/pradelna.html"><img src="./media/reference/reference-pradelna-600w.jpg" alt="Samoobslužná prádelna"></a>
             <h2>Samoobslužná prádelna</h2>
             <p>stavební úpravy a opravy</p>
         </div>
         <div class="reference__item">
-            <img src="./media/reference/reference-plocha-600w.jpg" alt="Venkovní plochy">
+            <a><img src="./media/reference/reference-plocha-600w.jpg" alt="Venkovní plochy"></a>
             <h2>Samoobslužná prádelna</h2>
             <p>provedení venkovnách ploch</p>
         </div>
-        <a href="#" id="btn-reference" class="cta__button--orange">Více referencí</a>
+        <a href="reference.html" id="btn-reference" class="cta__button--orange">Více referencí</a>
     </div>
     <footer>
         <div class="footer__text">
