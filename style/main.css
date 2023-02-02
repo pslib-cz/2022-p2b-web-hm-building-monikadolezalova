@@ -4,6 +4,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
+    color:rgba(58, 58, 58, 1);
 }
 p{
     font-family: 'Inter', sans-serif;
@@ -152,6 +153,7 @@ menu a{
     text-decoration: none;
     padding: 12px 40px;
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 .duvera{
     background:linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%),url(../media/background-CTAblock-4460w.jpg);
@@ -189,7 +191,6 @@ menu a{
 }
 .reference__item{
     display: flex;
-    justify-content: end;
     align-items: center;
     flex-direction: column;
     padding-bottom: 20px;
@@ -210,7 +211,6 @@ menu a{
 footer{
     background-color: var(--secondary-color);
     color:white;
-    height: 285px;
     text-align: center;
     padding-top: 65px;
 }
@@ -260,8 +260,11 @@ footer > h2{
 .list--end{
     padding-bottom: 90px;
 }
+.map{
+    margin: 50px -21px 0px -21px;
+}
 .map > img{
-    max-width: 360px;
+    max-width: auto;
 }
 .form{
     margin:0 21px 0 21px;
@@ -326,8 +329,244 @@ footer > h2{
 figure{
     margin:0px;
 }
+.cta__button--continue{
+    visibility: hidden;
+}
 @media screen and (min-width:1920px) {
-    .navbar ul li a{
+    h3{
+        font-size: 30px;
+    }
+    .cta__button--continue{
         visibility: visible;
-    } 
+    }
+    h1{
+       font-size:60px ; 
+    }
+    menu{
+        display: flex;
+    }
+    .navbar menu ul li a{
+        visibility: visible;
+    }
+    nav{
+        margin-top: 20px;
+        max-width: 1510px;
+    }
+    a.hamburger{
+        visibility: hidden;
+    }
+    .navbar menu ul{
+        justify-content: center;
+        display: flex;
+        list-style-type: none;
+    }
+    .navbar menu ul li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+    }
+    .home-title{
+       height: 1080px;
+    }
+    .home-title--text{
+        justify-content: end;
+    }
+    .home-title  h1{
+        font-size:120px ;
+    }
+    .home-title p{
+        font-size: 60px;
+        font-family: 'Open Sans', sans-serif;;
+        font-weight: 300;
+    }
+    .introduction h2{
+        font-size:60px ;
+    }
+    .introduction p{
+        font-size: 20px;
+        width: 890px;
+    }
+    .introduction{
+        display: flex;
+        align-items: center;
+        margin-bottom: 155px;
+    }
+    .content-wrapper{
+        margin:0px 205px 0px 205px;
+    }
+    .services{
+        margin-bottom: 220px;
+    }
+    .services__komunikace{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 100px;
+    }
+    .services__komunikace >img{
+        grid-column: 2;
+    }
+    .services__komunikace > .services__text{
+        grid-row: 1;
+    }
+    .services__prumyslove{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 100px;
+    }
+    .services__prumyslove >img{
+        grid-column-start: 2;
+    }
+    .services__prumyslove > .services__text{
+        grid-row: 1;
+    }
+    .services__novostavby{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 100px;
+    }
+    .services__rekonstrukce{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 100px;
+    }
+    .services > div > img{
+        width: 730px;
+        height: 307px;
+    }
+    .duvera{
+        height: 490px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 205px;
+    }
+    .duvera > p{
+        font-size:30px;
+    }
+    .cta__button--duvera{
+        padding: 20px 80px;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    .reference{
+        margin: 0px 205px;
+    }
+    .reference__text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .reference__text > h2{
+        font-size: 60px;
+    }
+    .reference__text > p{
+        width: 890px;
+    }
+    .reference__items{
+        display: flex;
+    }
+    .reference__item{
+        margin-right: 80px;
+    }
+    #btn-reference{
+        display: inline-block;
+    }
+    .reference__item--plochy{
+        margin-right: 0px;
+    }
+    .reference__text--hidden{
+        visibility: hidden;
+    }
+    .reference__item--hasici:hover{
+        background: rgba(235, 108, 39, 0.9);
+    }
+    .footer__text > h2{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .footer__text > p{
+        font-size: 25px;
+    }
+    .cta__button--white{
+        padding: 20px 69px;
+    }
+    .intoduction--different {
+        display:flex ;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    .intoduction--different > h1{
+        align-self: center;
+    }
+    .list{
+        margin-left: 100px;
+    }
+    .article{
+        margin-bottom: 220px;
+    }
+    .article > p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    #bigger-margin{
+        margin-bottom: 50px;
+    }
+    .grid-field{
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: dense;
+    }
+    .grid-field--hasici{
+        grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        "stairs . ."
+        "stairs . ."
+        "stairs . .";
+    }
+    .grid-item-3{
+        grid-area: stairs;
+    }
+    .grid-item{
+        align-self: end;
+    }
+    .contacts--all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacts{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+    }
+    .contacts > p{
+        font-size: 20px;
+    }
+    .contacts--number::before{
+        height: 60px;
+        width: 60px;
+    }
+    .contacts--email::before{
+        height: 60px;
+        width: 60px;
+    }
+    .contacts--location::before{
+        height: 60px;
+        width: 60px;
+    }
+    .map{
+        margin-right: -205px;
+    }
+    .map > img{
+        width: 850px;
+    }
+    .form >h2{
+        font-size: 30px;
+    }
+    .form > p{
+        font-size: 16px;
+    }
 }
