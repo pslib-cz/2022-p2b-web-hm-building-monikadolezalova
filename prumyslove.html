@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>HM Building.cz s.r.o - Průmyslové stavby</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img class="navbar__logo" src="./media/logo.png"  alt="HM Building cz"></a>
+        <menu class="menu hamburger-menu hamburger-menu--hidden">
+            <li><a href="./index.html" class="active">domů</a></li>
+            <li><a href="./index.html#services">služby</a></li>
+            <li><a href="./reference.html">reference</a></li>
+            <li><a href="./aboutus.html">o nás</a></li>
+            <li><a href="./kontakt.html">kontakty</a></li>                
+        </menu>
+        <a class="hamburger" href="javascript:void(0)">menu</a>
+    </nav>
+    <script>
+        const hamburgerButtons = document.querySelectorAll(".hamburger");
+        for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                const menus = document.querySelectorAll(".hamburger-menu");
+                for (const menu of menus) {
+                    menu.classList.toggle("hamburger-menu--hidden");
+                }
+            }
+        }
+    </script>
+    <div class="content-wrapper">
+        <div class="introduction intoduction--different">
+            <h1>Průmyslové stavby</h1>
+            <p>Realizujeme průmyslové objekty ocelové konstrukce, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se dostáváme na přijatelné ceny.</p>
+        </div>
+        <div class="list--end">
+            <ul class="list">
+                <li>zemní práce</li>
+                <li>základové konstrukce</li>
+                <li>průmyslové haly
+                    <ul>
+                        <li>ocelové</li>
+                        <li>ŽLB prefabrikované</li>
+                        <li>lehké ocelové (tzv. stanového typu)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__text">
+            <p class="footer__text--title">Plácneme si pro Váš projekt?</p>
+            <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        </div>
+        <a href="#" class="cta__button--white">Nezávazně poptat</a>
+    </footer>
+</body>
+</html>

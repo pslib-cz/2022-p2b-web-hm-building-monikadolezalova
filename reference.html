@@ -10,19 +10,27 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="./index.html" class="navbar__logo"><img src="./media/logo.png" alt="domů" width="130px"></a>
-            <menu class="navbar__menu hamburger-menu-hidden navbar__menu--hidden">
-                <ul>
-                    <li><a href="index.html">DOMŮ</a></li>
-                    <li><a href="novostavby.html">SLUŽBY</a></li>
-                    <li><a href="reference.html">REFERENCE</a></li>
-                    <li><a href="aboutus.html">O NÁS</a></li>
-                    <li><a href="kontakt.html">KONTAKT</a></li>
-
-                </ul>
+            <a href="index.html"><img class="navbar__logo" src="./media/logo.png"  alt="HM Building cz"></a>
+            <menu class="menu hamburger-menu hamburger-menu--hidden">
+                <li><a href="./index.html" class="active">domů</a></li>
+                <li><a href="./index.html#services">služby</a></li>
+                <li><a href="./reference.html">reference</a></li>
+                <li><a href="./aboutus.html">o nás</a></li>
+                <li><a href="./kontakt.html">kontakty</a></li>                
             </menu>
             <a class="hamburger" href="javascript:void(0)">menu</a>
         </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu");
+                    for (const menu of menus) {
+                        menu.classList.toggle("hamburger-menu--hidden");
+                    }
+                }
+            }
+        </script>
     </header>
     <div class="content-wrapper">
         <div class="introduction">
@@ -55,7 +63,7 @@
     </div>
     <footer>
         <div class="footer__text">
-            <h2>Plácneme si pro Váš projekt?</h2>
+            <p class="footer__text--title">Plácneme si pro Váš projekt?</p>
             <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         </div>
         <a href="#" class="cta__button--white">Nezávazně poptat</a>

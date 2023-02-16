@@ -13,36 +13,45 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="./index.html" class="navbar__logo"><img src="./media/logo.png" alt="domů" width="130px"></a>
-            <menu class="navbar__menu hamburger-menu-hidden navbar__menu--hidden">
-                <ul>
-                    <li><a href="index.html">DOMŮ</a></li>
-                    <li><a href="novostavby.html">SLUŽBY</a></li>
-                    <li><a href="reference.html">REFERENCE</a></li>
-                    <li><a href="aboutus.html">O NÁS</a></li>
-                    <li><a href="kontakt.html">KONTAKT</a></li>
-                </ul>
+            <a href="index.html"><img class="navbar__logo" src="./media/logo.png"  alt="HM Building cz"></a>
+            <menu class="menu hamburger-menu hamburger-menu--hidden">
+                <li><a href="./index.html" class="active">domů</a></li>
+                <li><a href="./index.html#services">služby</a></li>
+                <li><a href="./reference.html">reference</a></li>
+                <li><a href="./aboutus.html">o nás</a></li>
+                <li><a href="./kontakt.html">kontakty</a></li>                
             </menu>
             <a class="hamburger" href="javascript:void(0)">menu</a>
         </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu");
+                    for (const menu of menus) {
+                        menu.classList.toggle("hamburger-menu--hidden");
+                    }
+                }
+            }
+        </script>
     </header>
     <div class="content-wrapper">
         <div class="introduction">
            <h1>Kontaktujte nás</h1>
             <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
         </div>
-        <div class="contacts--all">
+        <section class="contacts--all">
             <div class="contacts">
-                <p class="contacts--number">+420 775 550 564</p>
-                <p class="contacts--email">stavby@hm-building.cz</p>
+                <p class="contacts--number"><a href="tel:+420775550564">+420 775 550 564</a></p>
+                <p class="contacts--email"><a href="mailto:stavby@hm-building.cz">stavby@hm-building.cz</a></p>
                 <p class="contacts--location"><a href="https://www.google.com/maps/place/Křižanská+12,+Horní+Suchá,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">Křížanská 12, Liberec XXII-Horní Suchá</a></p>
             </div>
             <div class="map">
                 <img src="./media/mapa.jpg" alt="mapa">
             </div>
-        </div>
+        </section>
     </div>
-    <div class="form">
+    <section class="form">
         <h2>Nezávazná poptávka služeb</h2>
         <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         <div class="form__entering">
@@ -53,6 +62,6 @@
             <p>Poznámka</p>
         </div>
         <a id="big" class="cta__button--orange">Odeslat nezávaznou poptávku</a>
-    </div>
+    </section>
 </body>
 </html>
